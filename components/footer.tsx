@@ -43,6 +43,29 @@ export function Footer() {
           throw error;
         }
       } else {
+        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+        const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+        Promise.all([
+          fetch(`${supabaseUrl}/functions/v1/send-email-notification`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${supabaseAnonKey}`,
+            },
+            body: JSON.stringify({ formType: 'newsletter', data: { email } }),
+          }).catch(err => console.error('Email notification failed:', err)),
+
+          fetch(`${supabaseUrl}/functions/v1/send-whatsapp-notification`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${supabaseAnonKey}`,
+            },
+            body: JSON.stringify({ formType: 'newsletter', data: { email } }),
+          }).catch(err => console.error('WhatsApp notification failed:', err)),
+        ]);
+
         toast({
           title: "Successfully Subscribed!",
           description: "Thank you for subscribing to our newsletter.",
