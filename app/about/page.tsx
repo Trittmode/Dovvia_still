@@ -19,7 +19,6 @@ export default function AboutPage() {
       <section className="relative py-20 bg-gradient-to-br from-dovvia-50 via-white to-dovvia-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Badge className="bg-dovvia-500 hover:bg-dovvia-600">About Dovvia Still</Badge>
             <h1>Our Story</h1>
             <p className="text-xl text-gray-600">
               Transforming the African water industry through premium quality, sustainability, and community empowerment
@@ -68,7 +67,7 @@ export default function AboutPage() {
                   </div>
                   <h3>Our Mission</h3>
                   <p className="text-gray-600">
-                    To provide Nigerians with premium quality still water in eco-friendly glass bottles while creating sustainable value for our customers, communities, and the environment through our innovative bottle return program.
+                    To provide Nigerians with premium quality water in eco-friendly glass bottles while creating sustainable value for our customers, communities, and the environment through our innovative bottle return program.
                   </p>
                 </CardContent>
               </Card>
@@ -128,7 +127,7 @@ export default function AboutPage() {
               {[
                 {
                   title: 'Advanced Technology',
-                  description: 'Investment in Chinese and German engineering technology ensures world-class water purification and bottling standards.',
+                  description: 'Investment in modern engineering technology ensures world-class water purification and bottling standards.',
                 },
                 {
                   title: 'Regulatory Compliance',
@@ -136,11 +135,11 @@ export default function AboutPage() {
                 },
                 {
                   title: 'Environmental Responsibility',
-                  description: 'Our glass bottle circular economy model reduces plastic waste and supports UN Sustainable Development Goals.',
+                  description: 'Our glass bottle circular economy model reduces plastic waste and supports United Nations Sustainable Development Goals.',
                 },
                 {
                   title: 'Community Empowerment',
-                  description: 'Creating jobs and economic opportunities through our bottle return and collection program.',
+                  description: 'Creating jobs and economic opportunities through our bottle return and collection model.',
                 },
               ].map((item, index) => (
                 <div key={index} className="space-y-3">
@@ -158,7 +157,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2>Join Our Journey</h2>
             <p className="text-xl text-gray-600">
-              Partner with us or enjoy our premium water. Together, we're building a sustainable future.
+              Partner with us and, or enjoy our premium water. Together, we're building a sustainable world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button

@@ -67,7 +67,6 @@ export default function ContactPage() {
       <section className="py-20 bg-gradient-to-br from-dovvia-50 via-white to-dovvia-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Badge className="bg-dovvia-500 hover:bg-dovvia-600">Get In Touch</Badge>
             <h1>Contact Us</h1>
             <p className="text-xl text-gray-600">
               We're here to help. Reach out to us for orders, inquiries, or partnership opportunities
@@ -151,9 +150,9 @@ export default function ContactPage() {
                       <div>
                         <h4 className="font-semibold text-dovvia-900 mb-2">Business Hours</h4>
                         <div className="text-sm text-gray-600 space-y-1">
-                          <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                          <p>Monday - Friday: 7:00 AM - 6:00 PM</p>
                           <p>Saturday: 9:00 AM - 4:00 PM</p>
-                          <p>Sunday: Closed</p>
+                          <p>Sunday: 12:00 PM - 3:00 PM</p>
                         </div>
                       </div>
                     </div>

@@ -2,20 +2,20 @@ import { Product, NavigationItem, FAQItem, Testimonial, SDGGoal } from './types'
 
 export const SITE_CONFIG = {
   name: 'Dovvia Still',
-  description: 'Premium glass bottled still water - Pure and green, supporting sustainable communities through cutting-edge water purification technology.',
+  description: 'Premium glass bottled still water - Pure and affordable to support and sustain communities through cutting-edge water purification technology and returnable system.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://still.dovvia.com',
   company: 'Dovvia Industries Limited',
 };
 
 export const CONTACT_INFO = {
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+2348012345678',
-  phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || '+234 801 234 5678',
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'info@dovvia.com',
-  address: 'Lagos, Nigeria',
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+2348166167775',
+  phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || '+234 816 616 7775',
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'admin@dovvia.com',
+  address: 'Kuje, Abuja, Nigeria',
 };
 
 export const WHATSAPP_MESSAGES = {
-  general: "Hello, I'd like to learn more about Dovvia Still water.",
+  general: "Hello, I'd like to make an inquiry about Dovvia Still water.",
   order50cl: "Hello, I'd like to order Dovvia Still water - 50cl glass bottles.",
   order75cl: "Hello, I'd like to order Dovvia Still water - 75cl glass bottles.",
   partnership: "Hello, I'm interested in becoming a Dovvia Still distributor.",
@@ -35,11 +35,12 @@ export const PRODUCTS: Product[] = [
   {
     id: '50cl',
     name: 'Dovvia Still 50cl',
+    price: 100,
     size: '50cl',
     volume: '500ml',
-    description: 'Perfect for personal use, events, and on-the-go refreshment. Our 50cl glass bottle delivers premium purity in a convenient size.',
+    description: '',
     refundAmount: 150,
-    image: '/dovvia_still.jpeg',
+    image: '/Dovvia still bg.png',
     useCases: ['Personal Use', 'Events', 'On-the-Go', 'Catering'],
     dimensions: {
       height: '24cm',
@@ -49,11 +50,12 @@ export const PRODUCTS: Product[] = [
   {
     id: '75cl',
     name: 'Dovvia Still 75cl',
+    price: 120,
     size: '75cl',
     volume: '750ml',
-    description: 'Ideal for home, office, and extended refreshment. Our 75cl glass bottle provides more premium water for your daily hydration needs.',
+    description: '',
     refundAmount: 150,
-    image: '/dovvia_still.jpeg',
+    image: '/Dovvia still bg.png',
     useCases: ['Home', 'Office', 'Meetings', 'Family'],
     dimensions: {
       height: '28cm',
@@ -270,7 +272,7 @@ export const PURIFICATION_STEPS = [
   {
     step: 7,
     title: 'Glass Bottling',
-    description: 'Purified water is bottled in premium glass bottles using automated German engineering systems.',
+    description: 'Purified water is bottled in premium glass bottles using automated integrated engineering systems.',
   },
 ];
 
@@ -281,8 +283,13 @@ export const CORE_VALUES = [
     icon: 'award',
   },
   {
+    title: 'Simplicity',
+    description: 'We simplify complex processes and models to deliver clean, safe, and premium water to our customers.',
+    icon: 'check-circle',
+  },
+  {
     title: 'Innovation',
-    description: 'We invest in cutting-edge Chinese and German technology to deliver superior water quality.',
+    description: 'We invest in cutting-edge technology and research to deliver superior water quality.',
     icon: 'lightbulb',
   },
   {

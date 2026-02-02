@@ -1,17 +1,20 @@
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Home, ArrowLeft, Search } from 'lucide-react';
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Home, ArrowLeft, Search } from "lucide-react";
 
 export default function NotFound() {
   return (
     <div className="min-h-[600px] flex items-center justify-center bg-gradient-to-br from-dovvia-50 via-white to-dovvia-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2">
         <div className="max-w-2xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <h1 className="text-9xl font-bold text-dovvia-500">404</h1>
-            <h2 className="text-3xl font-bold text-dovvia-900">Page Not Found</h2>
+            <h2 className="text-3xl font-bold text-dovvia-900">
+              Page Not Found
+            </h2>
             <p className="text-xl text-gray-600">
-              Sorry, we couldn't find the page you're looking for. It might have been moved or doesn't exist.
+              Sorry, we couldn't find the page you're looking for. It might have
+              been moved or doesn't exist.
             </p>
           </div>
 
@@ -26,28 +29,24 @@ export default function NotFound() {
                 Go Home
               </Link>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-            >
-              <Link href="/products">
-                View Products
-              </Link>
+            <Button asChild size="lg" variant="outline">
+              <Link href="/products">View Products</Link>
             </Button>
           </div>
 
           <div className="pt-8 border-t border-dovvia-200">
-            <p className="text-gray-600 mb-4">Looking for something specific?</p>
+            <p className="text-gray-600 mb-4">
+              Looking for something specific?
+            </p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { name: 'Home', href: '/' },
-                { name: 'About', href: '/about' },
-                { name: 'Products', href: '/products' },
-                { name: 'Quality', href: '/quality' },
-                { name: 'Partners', href: '/partners' },
-                { name: 'Contact', href: '/contact' },
-                { name: 'FAQ', href: '/faq' },
+                { name: "Home", href: "/" },
+                { name: "About", href: "/about" },
+                { name: "Products", href: "/products" },
+                { name: "Quality", href: "/quality" },
+                { name: "Partners", href: "/partners" },
+                { name: "Contact", href: "/contact" },
+                { name: "FAQ", href: "/faq" },
               ].map((link) => (
                 <Link
                   key={link.href}

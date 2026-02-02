@@ -37,12 +37,12 @@ export function Header() {
           : 'bg-white'
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto h-16 items-center ">
         <div className="flex h-16 md:h-20 items-center justify-between">
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/dovvia_t.png"
-              alt="Dovvia Still Logo"
+              alt="Dovvia Still Bottle"
               width={180}
               height={60}
               className="h-10 md:h-12 w-auto"
@@ -57,7 +57,7 @@ export function Header() {
                 href={item.href}
                 className={`text-sm font-medium transition-colors hover:text-dovvia-400 ${
                   isActivePath(item.href)
-                    ? 'text-dovvia-500'
+                    ? 'text-dovvia-500 border-b-2 border-dovvia-500'
                     : 'text-gray-700'
                 }`}
               >

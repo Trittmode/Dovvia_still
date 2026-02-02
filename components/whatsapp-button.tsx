@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -14,7 +15,7 @@ export function WhatsAppButton() {
           <Button
             asChild
             size="icon"
-            className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-lg bg-green-500 hover:bg-green-600 z-40 animate-pulse-soft"
+            className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-lg bg-green-50 hover:bg-green-600 z-40 animate-pulse-soft"
           >
             <a
               href={getWhatsAppLink(WHATSAPP_MESSAGES.general)}
@@ -22,7 +23,12 @@ export function WhatsAppButton() {
               rel="noopener noreferrer"
               aria-label="Contact us on WhatsApp"
             >
-              <MessageCircle className="h-7 w-7 text-white" />
+              <Image
+                src="/whatsapp_logo.svg"
+                alt="WhatsApp Icon"
+                width={38}
+                height={38}
+              />
             </a>
           </Button>
         </TooltipTrigger>

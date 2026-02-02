@@ -83,10 +83,17 @@
 
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: 'rlig' 1, 'calt' 1;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-semibold tracking-tight;
   }
 
@@ -107,5 +114,48 @@
 
   p {
     line-height: 1.5;
+  }
+}
+
+/* Reduce default horizontal gutters for container elements that use `px-4`. */
+.container.px-4 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Typewriter / typing animation used for hero text */
+.typing,
+.typing-slow {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.5rem transparent;
+  width: 100%;
+}
+
+.typing {
+  animation:
+    typing 3.5s steps(30, end) forwards,
+    blink-caret 0.7s step-end infinite;
+}
+
+.typing-slow {
+  animation:
+    typing 3.5s steps(30, end) forwards,
+    blink-caret 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
   }
 }

@@ -1,17 +1,25 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
-import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { useToast } from '@/hooks/use-toast';
-import { SITE_CONFIG, CONTACT_INFO, NAVIGATION } from '@/lib/constants';
-import { supabase } from '@/lib/supabase';
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useToast } from "@/hooks/use-toast";
+import { SITE_CONFIG, CONTACT_INFO, NAVIGATION } from "@/lib/constants";
+import { supabase } from "@/lib/supabase";
 
 export function Footer() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
@@ -21,31 +29,31 @@ export function Footer() {
 
     try {
       const { error } = await supabase
-        .from('newsletter_subscriptions')
+        .from("newsletter_subscriptions")
         .insert([{ email }]);
 
       if (error) {
-        if (error.code === '23505') {
+        if (error.code === "23505") {
           toast({
-            title: 'Already Subscribed',
-            description: 'This email is already subscribed to our newsletter.',
-            variant: 'default',
+            title: "Already Subscribed",
+            description: "This email is already subscribed to our newsletter.",
+            variant: "default",
           });
         } else {
           throw error;
         }
       } else {
         toast({
-          title: 'Successfully Subscribed!',
-          description: 'Thank you for subscribing to our newsletter.',
+          title: "Successfully Subscribed!",
+          description: "Thank you for subscribing to our newsletter.",
         });
-        setEmail('');
+        setEmail("");
       }
     } catch (error) {
       toast({
-        title: 'Subscription Failed',
-        description: 'Please try again later.',
-        variant: 'destructive',
+        title: "Subscription Failed",
+        description: "Please try again later.",
+        variant: "destructive",
       });
     } finally {
       setIsSubmitting(false);
@@ -56,7 +64,7 @@ export function Footer() {
 
   return (
     <footer className="bg-dovvia-900 text-white">
-      <div className="container mx-auto px-4 py-12 md:py-16">
+      <div className="container mx-auto px-2 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           <div className="space-y-4">
             <Image
@@ -67,7 +75,8 @@ export function Footer() {
               className="h-10 w-auto brightness-0 invert"
             />
             <p className="text-dovvia-100 text-sm leading-relaxed">
-              Premium glass bottled still water. Pure and green, supporting sustainable communities.
+              Premium glass bottled still water. Pure and green, supporting
+              sustainable communities.
             </p>
             <div className="flex space-x-4">
               <a
@@ -139,7 +148,7 @@ export function Footer() {
               <li className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-dovvia-300 mt-0.5 flex-shrink-0" />
                 <a
-                  href={`tel:${CONTACT_INFO.phone.replace(/\s/g, '')}`}
+                  href={`tel:${CONTACT_INFO.phone.replace(/\s/g, "")}`}
                   className="text-dovvia-200 hover:text-white transition-colors text-sm"
                 >
                   {CONTACT_INFO.phone}
@@ -182,7 +191,7 @@ export function Footer() {
                 disabled={isSubmitting}
                 className="w-full bg-dovvia-500 hover:bg-dovvia-600"
               >
-                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
+                {isSubmitting ? "Subscribing..." : "Subscribe"}
               </Button>
             </form>
           </div>
