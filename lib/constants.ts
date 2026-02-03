@@ -28,6 +28,8 @@ export const NAVIGATION: NavigationItem[] = [
   { name: 'Products', href: '/products' },
   { name: 'Quality', href: '/quality' },
   { name: 'Partners', href: '/partners' },
+  { name: 'Careers', href: '/careers' },
+  { name: 'Scholarships', href: '/scholarships' },
   { name: 'Contact', href: '/contact' },
 ];
 
