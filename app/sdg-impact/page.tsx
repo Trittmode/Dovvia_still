@@ -37,9 +37,6 @@ export default function SDGImpactPage() {
       <section className="py-20 bg-gradient-to-br from-dovvia-50 via-white to-dovvia-50">
         <div className="container mx-auto px-2">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Badge className="bg-dovvia-500 hover:bg-dovvia-600">
-              UN SDG Alignment
-            </Badge>
             <h1>Our Sustainable Development Impact</h1>
             <p className="text-xl text-gray-600">
               Dovvia Still is committed to supporting the United Nations
@@ -184,13 +181,13 @@ export default function SDGImpactPage() {
             <h2>Join the Movement</h2>
             <p className="text-xl text-dovvia-100">
               Every bottle you purchase and return contributes to a more
-              sustainable future for Nigeria and our planet
+              sustainable future for Nigeria, Africa and our planet
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-dovvia-900 hover:bg-dovvia-50"
+                className="bg-white border-2 border-white text-dovvia-900 hover:bg-dovvia-200"
               >
                 <a
                   href={getWhatsAppLink(WHATSAPP_MESSAGES.general)}
@@ -205,7 +202,7 @@ export default function SDGImpactPage() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white/10"
+                className="border-2 border-white text-dovvia-900 hover:bg-dovvia-200"
               >
                 <Link href="/partners">Become a Partner</Link>
               </Button>

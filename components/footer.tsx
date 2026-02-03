@@ -135,7 +135,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-2 gap-2">
               {NAVIGATION.map((item) => (
                 <li key={item.href}>
                   <Link
@@ -156,10 +156,26 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  href="/careers"
+                  className="text-dovvia-200 hover:text-white transition-colors text-sm"
+                >
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/sdg-impact"
                   className="text-dovvia-200 hover:text-white transition-colors text-sm"
                 >
                   SDG Impact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/scholarships"
+                  className="text-dovvia-200 hover:text-white transition-colors text-sm"
+                >
+                  Scholarships
                 </Link>
               </li>
             </ul>

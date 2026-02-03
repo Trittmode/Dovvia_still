@@ -25,8 +25,7 @@ export default function FAQPage() {
       <section className="py-20 bg-gradient-to-br from-dovvia-50 via-white to-dovvia-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Badge className="bg-dovvia-500 hover:bg-dovvia-600">FAQ</Badge>
-            <h1>Frequently Asked Questions</h1>
+            <h1>FAQs</h1>
             <p className="text-xl text-gray-600">
               Find answers to common questions about our products, services, and partnerships
             </p>
@@ -38,19 +37,19 @@ export default function FAQPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto space-y-12">
             {categories.map((category) => (
-              <div key={category} className="space-y-6">
+              <div key={category} className="space-y-2">
                 <h2 className="text-2xl font-bold text-dovvia-900 border-b-2 border-dovvia-200 pb-3">
                   {category}
                 </h2>
-                <Accordion type="single" collapsible className="space-y-4">
+                <Accordion type="single" collapsible className="space-y-2">
                   {FAQ_ITEMS.filter((item) => item.category === category).map(
                     (item, index) => (
                       <AccordionItem
                         key={index}
                         value={`${category}-${index}`}
-                        className="border-2 border-dovvia-100 rounded-lg px-6"
+                        className="border-2 border-dovvia-100 rounded-lg px-2"
                       >
-                        <AccordionTrigger className="text-left hover:text-dovvia-600">
+                        <AccordionTrigger className="text-left text-lg hover:text-dovvia-600">
                           {item.question}
                         </AccordionTrigger>
                         <AccordionContent className="text-gray-600">

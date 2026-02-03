@@ -106,7 +106,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     category: 'Product & Quality',
     question: 'What makes Dovvia Still water premium quality?',
-    answer: 'Dovvia Still water undergoes a rigorous multi-stage purification process using cutting-edge Chinese and German engineering technology. Our water passes through pre-filtration, activated carbon filtration, reverse osmosis, UV sterilization, and ozonation. Every batch is tested to ensure the highest purity standards, and we bottle exclusively in glass to preserve taste and prevent chemical leaching.',
+    answer: 'Dovvia Still water undergoes a rigorous multi-stage purification process using cutting-edge Chinese and German engineering technology. Our water passes through pre-filtration, activated carbon filtration, reverse osmosis, UV sterilization, ozonation and mineralization. Every batch is tested to ensure the highest purity standards, and we bottle exclusively in glass to preserve taste and prevent chemical leaching.',
   },
   {
     category: 'Product & Quality',
@@ -116,12 +116,12 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     category: 'Product & Quality',
     question: 'Where does the water come from?',
-    answer: 'Our water is sourced from carefully selected natural sources and treated using state-of-the-art purification technology that meets and exceeds Nigerian regulatory standards (NAFDAC and SON compliance).',
+    answer: 'Our water is sourced from carefully selected natural sources and treated using state-of-the-art purification technology that consistently meets regulatory standards (NAFDAC and SON compliance).',
   },
   {
     category: 'Product & Quality',
     question: 'Why glass bottles instead of plastic?',
-    answer: 'Glass bottles are 100% recyclable, preserve the pure taste of water, and prevent harmful chemical leaching that can occur with plastic bottles. Our glass packaging is part of our commitment to your health and environmental sustainability.',
+    answer: 'Glass bottles are 100% recyclable, preserve the pure taste of water, and prevent harmful chemical leaching that can occur with plastic bottles. Temperature in Nigeria ranges from 25°C to 40°C which increases leaching in plastic bottles and can lead to fertility issues, heart disease, neurological disorders, and thyroid disease. Our glass packaging is part of our commitment to your health and environmental sustainability.',
   },
   {
     category: 'Ordering & Delivery',
@@ -131,7 +131,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     category: 'Ordering & Delivery',
     question: 'What are the delivery areas?',
-    answer: 'We currently deliver across Lagos and surrounding areas. Contact us via WhatsApp or our contact page to confirm delivery to your specific location.',
+    answer: 'We currently deliver across the FCT (Abuja), Lagos and surrounding areas. Contact us via WhatsApp or our contact page to confirm delivery to your specific location.',
   },
   {
     category: 'Ordering & Delivery',
@@ -141,17 +141,17 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     category: 'Bottle Return & Refund',
     question: 'How does the bottle return program work?',
-    answer: 'Our circular economy model is simple: purchase Dovvia Still water, enjoy the premium quality, and return your empty glass bottles to receive ₦150 refund per bottle. This supports sustainability while providing value back to you.',
+    answer: 'Our circular economy model is simple: purchase Dovvia Still water, enjoy the premium quality, and return your empty glass bottles to any of our authorized collection points to receive instant ₦150 refund per bottle. This supports sustainability while providing value back to you.',
   },
   {
     category: 'Bottle Return & Refund',
     question: 'Where can I return empty bottles?',
-    answer: 'You can return bottles at authorized collection points or during your next delivery. Contact us via WhatsApp to find the nearest collection point or arrange pickup.',
+    answer: 'You can return bottles at authorized collection points or exchange for filled bottles during your next delivery. Contact us via WhatsApp to find the nearest collection point or arrange pickup.',
   },
   {
     category: 'Bottle Return & Refund',
     question: 'How long does it take to receive my refund?',
-    answer: 'Refunds are typically processed within 24-48 hours of bottle return verification. You can choose to receive your refund as cash, credit towards your next order, or mobile money transfer.',
+    answer: 'Refunds are instantly. You can choose to receive your refund as cash, mobile money transfer, or credit at supermarkets, restaurants and other participating businesses.',
   },
   {
     category: 'Partnership & Distribution',
@@ -171,12 +171,17 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     category: 'Sustainability & Impact',
     question: 'How does Dovvia Still support sustainability?',
-    answer: 'We support multiple UN Sustainable Development Goals through our glass bottle circular economy model, reducing plastic waste, creating local jobs through our bottle return program, and ensuring access to clean drinking water. Every bottle returned prevents plastic pollution and supports community empowerment.',
+    answer: 'We support multiple UN Sustainable Development Goals through our glass bottle circular economy model, reducing plastic waste, creating local jobs through our bottle return program, and ensuring access to clean drinking water. Every bottle returned prevents plastic pollution and supports community empowerment against global environmental challenges.',
   },
   {
     category: 'Sustainability & Impact',
     question: 'What is the environmental impact of glass vs plastic?',
     answer: 'Glass is infinitely recyclable without quality degradation, unlike plastic which can only be recycled a few times. Our glass bottles reduce microplastic pollution, ocean plastic waste, and carbon emissions. Plus, glass doesn\'t leach chemicals into water.',
+  },
+  {
+    category: 'Sustainability & Impact',
+    question: 'How does Dovvia Still benefit the less privileged?',
+    answer: 'Dovvia Still supports the needy by enabling them to pick up our glass bottles worth ₦150 each and exchange them for a bounty instant money to settle their immediate needs. This supports local communities through job creation in our bottle return and collection program, providing training and resources to partners, and investing in sustainable water access initiatives.',
   },
 ];
 
