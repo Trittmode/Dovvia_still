@@ -3,7 +3,7 @@ import { Product, NavigationItem, FAQItem, Testimonial, SDGGoal } from './types'
 export const SITE_CONFIG = {
   name: 'Dovvia Still',
   description: 'Premium glass bottled still water - Pure and affordable to support and sustain communities through cutting-edge water purification technology and returnable system.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://still.dovvia.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.dovvia.com',
   company: 'Dovvia Industries Limited',
 };
 
