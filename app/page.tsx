@@ -136,7 +136,7 @@ export default function HomePage() {
 
               {/* Mobile overlay: place heading and short paragraph to the right of the bottle */}
               <div className="lg:hidden z-1 absolute inset-0">
-                <h1 className="absolute right-4 mt-20 w-[calc(100%-32px)] px-4 justify-center text-center order-1 text-3xl md:text-4xl font-bold text-dovvia-900 typing">
+                <h1 className="absolute right-4 mt-20 w-[calc(100%-32px)] px-4 justify-center text-center order-1 text-3xl md:text-4xl font-bold text-dovvia-900">
                   Dovvia{"                   "}Still
                 </h1>
                 {/* <div className="absolute flex flex-col left-[1px] mt-20 transform -translate-y-1/4 w-[calc(100%-3200px)] px-4 text-center text-3xl md:text-4xl font-bold text-dovvia-900 typing">

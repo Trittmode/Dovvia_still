@@ -213,8 +213,15 @@ export default function CareersPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const WEBHOOK_URL =
-      "https://hook.eu1.make.com/22arvu8ns2ibkrah6vui4w5rccmq5hp3";
+    const WEBHOOK_URL = process.env.NEXT_PUBLIC_WEBHOOK_URL;
+
+    if (!WEBHOOK_URL) {
+      toast.error(
+        "Application submission failed: Webhook URL is not configured.",
+      );
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       // Prepare data for Zoho Recruit integration
@@ -277,8 +284,7 @@ export default function CareersPage() {
               Join Our Team
             </h1>
             <p className="text-xl text-emerald-50 mb-8">
-              Be part of a mission to provide clean, safe, and sustainable water
-              to Nigerias with excellence, simplicity and love for people .
+              We are an excellent, simple and loving people.
             </p>
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
